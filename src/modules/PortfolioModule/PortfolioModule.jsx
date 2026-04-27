@@ -3,7 +3,7 @@ import styles from './PortfolioModule.module.scss'
 
 function PortfolioModule(){
   return (
-    <section className={styles.container}>
+    <section className={'alt-section-bg'}>
       <div className={`wrap ${styles.insideContainer}`}>
         <h2 className={'section-heading'}>
             Мое вдохновение и ваши идеи

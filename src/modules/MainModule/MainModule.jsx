@@ -1,6 +1,7 @@
 import styles from './MainModule.module.scss'
 import Author from '../../components/Author'
 import ContactInfo from '../../components/ContactInfo'
+import ContactInfoButtons from '../../components/ContactInfoButtons'
 
 function MainModule(){
   return (
@@ -12,6 +13,9 @@ function MainModule(){
           <div className={styles.descriptionContainer}>
             <Author/>
             <ContactInfo/>
+            <div className={styles.buttonsPosition}>
+              <ContactInfoButtons/>
+            </div>
           </div>
         </header>
       </div>

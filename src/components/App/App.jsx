@@ -1,3 +1,4 @@
+import ContactMeModule from '../../modules/ContactMeModule'
 import FooterModule from '../../modules/FooterModule/FooterModule'
 import LocationModule from '../../modules/LocationModule'
 import MainModule from '../../modules/MainModule'
@@ -10,7 +11,8 @@ function App(){
       <MainModule/>
       <PortfolioModule/>
       <LocationModule/>
-      <FooterModule/>
+      <ContactMeModule/>
+      {/* <FooterModule/> */}
     </>
   )
 }

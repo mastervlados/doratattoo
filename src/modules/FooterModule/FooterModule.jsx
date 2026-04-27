@@ -2,9 +2,11 @@ import styles from './FooterModule.module.scss'
 
 function FooterModule(){
   return (
-    <div className={styles.container}>
-      Hell Done!
-    </div>
+    <footer className={'alt-section-bg'}>
+        <div className={`wrap ${styles.container}`}>
+
+        </div>
+    </footer>
   )
 }
 
