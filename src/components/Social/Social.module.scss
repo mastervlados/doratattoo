@@ -1,0 +1,17 @@
+.insideContainer {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.buttonsContainer {
+    display: flex;
+    column-gap: 12px;
+}

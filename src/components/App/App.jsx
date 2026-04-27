@@ -12,7 +12,7 @@ function App(){
       <PortfolioModule/>
       <LocationModule/>
       <ContactMeModule/>
-      {/* <FooterModule/> */}
+      <FooterModule/>
     </>
   )
 }
