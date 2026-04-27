@@ -9,10 +9,11 @@
 }
 
 .headerContainer {
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .headerContainer div {
-    width: 33%;
+    width: 28%;
 }

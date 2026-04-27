@@ -1,0 +1,16 @@
+.buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin-top: 20px;
+}
+
+.ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+}
+
+.ul h3::before {
+    content: '✅';
+}
