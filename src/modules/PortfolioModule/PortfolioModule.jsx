@@ -8,8 +8,8 @@ function PortfolioModule(){
         <h2 className={'section-heading'}>
             Мое вдохновение и ваши идеи
         </h2>
-        <PhotoGallery/>
       </div>
+      <PhotoGallery/>
     </section>
   )
 }

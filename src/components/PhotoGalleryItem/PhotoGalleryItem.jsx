@@ -1,9 +1,9 @@
 import styles from './PhotoGalleryItem.module.scss'
 
-function PhotoGalleryItem(){
+function PhotoGalleryItem({ key, src, alt }){
   return (
-    <div className={styles.container}>
-      Hell Done!
+    <div key={key} className={styles.container}>
+      <img src={src} alt={alt} className={styles.image}/>
     </div>
   )
 }
