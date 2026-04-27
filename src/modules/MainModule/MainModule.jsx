@@ -5,11 +5,14 @@ import ContactInfo from '../../components/ContactInfo'
 function MainModule(){
   return (
     <main className={styles.container}>
-      <div className={'wrap'}>
+      <div className={styles.mask}/>
+      <div className={`wrap ${styles.insideContainer}`}>
         <header className={styles.headerContainer}>
           <div className={styles.dummyDiv}/>
-          <Author/>
-          <ContactInfo/>
+          <div className={styles.descriptionContainer}>
+            <Author/>
+            <ContactInfo/>
+          </div>
         </header>
       </div>
     </main>

@@ -8,7 +8,7 @@ function Author(){
         <h1 className={styles.heading}>Дарья Холод</h1>
         <p className={styles.addressPosition}><Address/></p>
         <p className={[styles.slugPosition, styles.slug].join(' ')}>Создаю тату с характером — сюжетные, глубокие, графичные</p>
-        <p>Работаю по индивидуальным эскизам, с чистой проработкой деталей и вниманием к каждому клиенту</p>
+        <p className={styles.workflow}>Работаю по индивидуальным эскизам, с чистой проработкой деталей и вниманием к каждому клиенту</p>
     </div>
   )
 }

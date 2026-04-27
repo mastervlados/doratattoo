@@ -1,19 +1,70 @@
 .container {
     width: 100%;
     height: 100vh;
+    min-height: fit-content;
     overflow: hidden;
     background: url('https://light-vision.ucoz.ru/doratattoo/images/main_reversed.png');
     background-position: top left;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+    overflow: hidden;
+    // border: 1px solid red;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: radial-gradient(circle at center, #3a3f47, #1f2125);
+    z-index: 111;
+    opacity: .6;
+    display: none;
+}
+
+.insideContainer {
+    position: relative;
+    z-index: 1000;
 }
 
 .headerContainer {
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
 }
 
-.headerContainer div {
-    width: 28%;
+.dummyDiv {
+    width: 50%;
+}
+
+.descriptionContainer {
+    width: 50%;
+    // border: 1px solid orange;
+}
+
+@media (max-width: 1024px) {
+    .mask {
+        display: block;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        background: url('https://light-vision.ucoz.ru/doratattoo/images/main_mobile_cutted.png');
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .headerContainer {
+        margin-top: 250px;
+    }
+    .dummyDiv {
+        width: 0;
+    }
+    .descriptionContainer {
+        width: 100%;
+        // border: 1px solid brown;
+    }
 }

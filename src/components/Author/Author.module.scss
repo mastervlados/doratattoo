@@ -3,7 +3,7 @@
 }
 
 .slug {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 .slugPosition {
@@ -14,9 +14,15 @@
     border-left: 3px solid #6C757D;
     padding-left: 6px;
     margin-bottom: 6px;
+    font-weight: 500;
 }
 
 .heading {
     font-size: 36px;
     font-family: 'AvanteBs', sans-serif;
+}
+
+.workflow {
+    margin-bottom: 50px;
+    max-width: 500px;
 }
