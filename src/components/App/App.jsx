@@ -1,10 +1,11 @@
+import MainModule from '../../modules/MainModule'
 import styles from './App.module.scss'
 
 function App(){
   return (
-    <div className={styles.container}>
-      Hell Done!
-    </div>
+    <>
+      <MainModule/>
+    </>
   )
 }
 

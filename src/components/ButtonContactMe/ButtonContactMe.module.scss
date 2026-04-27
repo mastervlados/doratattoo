@@ -1,0 +1,102 @@
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    width: 230px;
+    height: 48px;
+}
+
+.insideContainer {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.iconContainer {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // border: 1px solid brown;
+}
+
+.buttonText {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@keyframes slideme {
+    0% {
+      left: -30px;
+      margin-left: 0px;
+    }
+    30% {
+      left: 110%;
+      margin-left: 80px;
+    }
+    100% {
+      left: 110%;
+      margin-left: 80px;
+    }
+  }
+  
+  .tgButton {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .tgButton:after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 200px;
+    margin-left: 60px;
+    background: #fff;
+    opacity: 0.5;
+    position: absolute;
+    left: -40px;
+    top: -100px;
+    z-index: 1;
+    transform: rotate(45deg);
+    transition: all 0.1s;
+    animation-name: slideme;
+    animation-duration: 3s;
+    animation-delay: 0.05s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+.contactButton {
+    z-index: 1501;
+    background: radial-gradient(circle at 30% 110%, 
+        #f8f9fa 0%, 
+        #e9ecef 50%, 
+        #ced4da 100%);
+    color: #212529;
+    border: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        background: radial-gradient(circle at 30% 110%, 
+            #ffffff 0%, 
+            #f1f3f5 50%, 
+            #dee2e6 100%);
+        filter: brightness(1.02);
+    }
+    
+    &:active {
+        transform: translateY(0);
+        background: radial-gradient(circle at 30% 110%, 
+            #e9ecef 0%, 
+            #dee2e6 50%, 
+            #ced4da 100%);
+        filter: brightness(0.98);
+    }
+}
