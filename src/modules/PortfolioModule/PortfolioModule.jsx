@@ -1,12 +1,14 @@
+import PhotoGallery from '../../components/PhotoGallery'
 import styles from './PortfolioModule.module.scss'
 
 function PortfolioModule(){
   return (
     <section className={styles.container}>
-      <div className={'wrap'}>
+      <div className={`wrap ${styles.insideContainer}`}>
         <h2 className={'section-heading'}>
             Мое вдохновение и ваши идеи
         </h2>
+        <PhotoGallery/>
       </div>
     </section>
   )
