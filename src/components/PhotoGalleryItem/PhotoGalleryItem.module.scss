@@ -5,5 +5,26 @@
 .image {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all 0.2s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+    user-select: none;
+    -webkit-user-drag: none;
+    will-change: transform;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     cursor: grab;
+    
+    &:active {
+        cursor: grabbing;
+    }
+}
+
+.hovered {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.02);
+}
+
+.pressed {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    filter: brightness(0.95);
+    transition: all 0.05s linear;
 }
